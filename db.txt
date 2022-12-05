@@ -1,0 +1,41 @@
+users
+id
+name
+address => nullable
+contact_number => nullable
+admin
+email
+password
+session => nullable
+
+products
+id
+code
+name
+image
+price
+stock
+
+cart_items
+id
+user_id
+transaction_id
+price
+quantity
+subtotal
+
+transactions
+id
+user_id
+product_id
+total_amount
+payment_method (cash, gcash)
+status (pending, paid, shipping, received, refunded)
+delivery =>nullable
+
+customer_messages
+id
+name
+email
+subject
+message
